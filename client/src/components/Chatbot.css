@@ -1,0 +1,36 @@
+.chatbot {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 10px #aaa;
+  z-index: 1000;
+}
+
+.chat-window {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+}
+
+.msg {
+  margin: 4px 0;
+}
+
+.msg.user {
+  text-align: right;
+  color: #007bff;
+}
+
+.msg.assistant {
+  text-align: left;
+  color: #333;
+}
+
+.chat-input {
+  display: flex;
+  gap: 6px;
+}

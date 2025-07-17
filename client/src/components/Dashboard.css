@@ -1,0 +1,186 @@
+/* Overall Layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #d3c0f9, #c1d9f6, #f5d0ff);
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem 1rem;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #5f6df8, #cb44e5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.logout-link {
+  color: #ffc9de;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 3rem;
+}
+
+/* Form */
+.habit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.habit-form input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.habit-form button {
+  padding: 0.8rem 0.8rem;
+  height : 50px;
+  background: linear-gradient(to right, #e98dc1, #e467f2);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.habit-form button:hover {
+  background: linear-gradient(to right, #5f6df8, #cb44e5);
+  box-shadow: 0 10px 24px rgba(135, 103, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Habit List */
+.habit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.habit-list li {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.habit-list li strong {
+  color: #fff;
+}
+
+.habit-list .date {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+.chatbot-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+.chat-box {
+  max-height: 200px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-msg {
+  text-align: right;
+  margin-bottom: 0.5rem;
+  color: #c5f6fa;
+}
+
+.ai-msg {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #e5e5e5;
+}
+
+.chatbot-section input {
+  width: 80%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.chatbot-section button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+.progress-report {
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #28a745;
+}

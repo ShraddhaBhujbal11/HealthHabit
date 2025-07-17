@@ -1,0 +1,77 @@
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d3c0f9, #c1d9f6, #f5d0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+}
+
+.contact-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #5f6df8, #cb44e5);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #f0f0ff;
+}
+
+.contact-info a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #ffd6fc;
+}
+
+.contact-message {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #f6f6ff;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.contact-socials {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact-socials p {
+  margin-bottom: 0.5rem;
+}
+
+.social-icon {
+  color: #e4d7ff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #fff0fc;
+}
